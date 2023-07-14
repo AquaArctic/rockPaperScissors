@@ -1,0 +1,108 @@
+body {
+
+    background-color:antiquewhite;
+    height: 100%;
+    width: 100%;
+}
+
+.game-environment {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: serif;
+}
+
+button {
+
+    color: brown;
+    font-weight: 600;
+    font-size: medium;
+    margin: 20px;
+    font: 200;
+    background-color: blanchedalmond;
+    width: 150px; /* Adjust the width as desired */
+    height: 50px; /* Adjust the height as desired */
+}
+
+#play-again-button {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: brown;
+    font-weight: 600;
+    font-size: medium;
+    margin: 20px;
+    font: 200;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+}
+
+#buttons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+
+    transform: scale(1.1); /* Increase the scale as desired */
+  }
+
+#result {
+
+    color: blue;
+    font-size: 50px;
+}
+
+#score {
+
+    color: blue;
+    font-size: 50px;
+}
+
+h1 {
+
+    color: darkred;
+    text-align: center;
+    font-size: 100px;
+}
+
+#winner-container.show {
+
+    opacity: 0;
+    animation: fade-in 3s ease-in forwards;
+  }
+  
+  @keyframes fade-in {
+
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #winner-text {
+
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
